@@ -1,0 +1,86 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Inter;
+    color: #374151;
+    width: 34.375em;
+    border: 1px solid gray;
+    border-radius: 6px;
+    margin: 20px auto;
+}
+
+#generated-colors-container > * {
+    width: 100%;
+    height: 100%;
+}
+
+#generated-colors-container{
+    display: flex; 
+    height: 50vh;
+    
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 0;
+}
+
+
+#color-scheme-options {
+    display: flex;
+    gap: 15px;
+
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4375em 0.875em;
+}
+
+#color-scheme-mode {
+    padding: 0.6875em 0.9375em;
+    flex-grow: 1;
+    font-family: Inter;
+    line-height: 24px;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+#color-picker-input {
+    width: 61px;
+    height: 42px;
+}
+
+#confirm-color-btn {
+    padding: 1.083em 0.916em;
+    font-size: 12px;
+    line-height: 16px;
+    font-family: Inter;
+    border-radius: 4px;
+
+    cursor: pointer;
+}
+
+#color-picker-input,
+#color-scheme-mode,
+#confirm-color-btn{
+    border: 1px solid #D1D5DB;
+    background-color: white;
+}
+
+.generated-color-block {
+    display: flex;
+    flex-direction: column;
+}
+
+.generated-color-block > *:last-child {
+    text-align: center;
+    padding-top: 0.833em;
+    padding-bottom: 0.833em;
+
+    /*Typography*/
+    color: #2B283A; 
+    font-family: Inter; 
+    font-size: 12px; 
+}
